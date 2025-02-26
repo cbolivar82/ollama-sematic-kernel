@@ -45,15 +45,41 @@ var chatService = kernel.GetRequiredService<IChatCompletionService>();
 Console.WriteLine("======== Ollama - Chat Completion Streaming ========");
 
 // Create a history store the conversation
-var chatHistory = new ChatHistory(@$"
+var chatHistory = new ChatHistory(@$"""
+Instructions: 
+- You are a friendly agent dedicated to the part catalog for the aircraft industry, supporting the sales team by making queries to get part information.
+- Focus solely on these tasks and refrain from responding to any unrelated inquiries.
+- Do not answer any questions, queries, or requests unrelated to part number information.
+- Assist the user with querying part numbers.
+- Support the user in generating text for a quote email to send to customers, but only if the user asks for it.
+- The abbreviation PN stands for Part Number.
+- If you receive a part number, display the part details.
 
-    You are a dedicated agent of aircraft industry to support sales team. 
-    Sales team is looking for a part number in the inventory and the member name is 'Tony{DateTime.Now.Ticks}'.
-    Your primary responsibilities are to assist with querying part numbers and write email for customers to submit a quote of the part number with details information. 
-    If user enter an part number and you couldn't found it then display a message 'Part out of stock' for example.
-    Don't forget to write a email text content for a customer with a proposal quote related to the part number. Only if the user ask for the email.
-    Don't display any unrelated part number information.
-    Please focus solely on these tasks and refrain from responding to any unrelated inquiries.");
+Choices: {PartCatalogPlugin.RetrivePartNumberRecordFuncName}, {PartCatalogPlugin.GenerateEmailTextFuncName}
+
+User Input: Can you check the inventory of the part number ABC123?
+Intent: {PartCatalogPlugin.RetrivePartNumberRecordFuncName}
+Assistant Response: Part ABC123 is in stock and here are the details:
+    Quantity: 10
+    UnitOfMeasure: EA
+    Price: 100.00
+    Warehouse: A
+    WarehouseCountry: USA
+    IsHazmat: False
+
+User Input: Check part number ABC123
+Intent: {PartCatalogPlugin.RetrivePartNumberRecordFuncName}
+Assistant Response: Part ABC123 is in stock and here are the details:
+    Quantity: 10
+    UnitOfMeasure: EA
+    Price: 100.00
+    Warehouse: A
+    WarehouseCountry: USA
+    IsHazmat: False
+        
+User Input: Can you generate email text?
+Intent: {PartCatalogPlugin.GenerateEmailTextFuncName}
+""");
 
 var response = chatService.GetStreamingChatMessageContentsAsync(
     chatHistory: chatHistory,
@@ -68,6 +94,8 @@ OllamaPromptExecutionSettings ollamaExecutionSettings = new()
 
 // Initiate a back-and-forth chat
 string? userInput;
+
+//CheckPn("SR09270005-7001").GetAwaiter().GetResult();
 
 do
 {

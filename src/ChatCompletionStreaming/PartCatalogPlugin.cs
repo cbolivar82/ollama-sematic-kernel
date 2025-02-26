@@ -1,6 +1,5 @@
 ﻿using System.ComponentModel;
 
-using ChatCompletionStreaming.Core.Entities;
 using ChatCompletionStreaming.Data;
 
 using Microsoft.SemanticKernel;
@@ -8,6 +7,8 @@ using Microsoft.SemanticKernel;
 namespace ChatCompletionStreaming;
 public class PartCatalogPlugin
 {
+    public const string GenerateEmailTextFuncName = "generate_email_text";
+    public const string RetrivePartNumberRecordFuncName = "retrive_part_number_information";
     private readonly IPartCatalogService _partCatalogService;
 
     public PartCatalogPlugin(IPartCatalogService partCatalogService)
@@ -15,35 +16,31 @@ public class PartCatalogPlugin
         _partCatalogService = partCatalogService;
     }
 
-    //[KernelFunction(nameof(GetPartNumberAsString))]
-    //[Description("Retrieve Part Number Inventory Information based on the given Part Number.")]
-    //public string GetPartNumberAsString(
-    //    [Description("The part number to retrieve.")] string partNumber)
-    //{
-    //    var data = _partCatalogService.GetPartCatalog(partNumber);
-
-    //    return data is not null
-    //        ? $"Part {partNumber} '{data.Description}' is in stock."
-    //        : $"Part {partNumber} is not in stock.";
-    //}
-
-    [KernelFunction(nameof(RetreivePartNumber))]
-    [Description(@"""Retrieve Part Number Record based on the given Part Number and return:
-    PN: this partNumber field
-    Cond: this conditionCode field
-    Unit Price: this is the price field formatted as currency
-    Warehouse: this is the warehouse field.
-    Do not change the data or autocomplete the text""")]
-    public PartCatalog? RetreivePartNumber(
+    [KernelFunction(RetrivePartNumberRecordFuncName)]
+    [Description(@"Check if the part number is stock and retrieve Part Number Details")]
+    public string RetreivePartNumberInfo(
         [Description("The part number to retrieve.")] string partNumber)
     {
-        return _partCatalogService.GetPartCatalog(partNumber);
+        var result = _partCatalogService.GetPartCatalog(partNumber);
+
+        if (result is null)
+        {
+            return "Part out of stock";
+        }
+
+        return @$"Part {result.PartNumber} is in stock and here are the details:
+                {nameof(result.Quantity)}: {result.Quantity}
+                {nameof(result.UnitOfMeasure)}: {result.UnitOfMeasure}
+                {nameof(result.Price)}: {result.Price}
+                {nameof(result.Warehouse)}: {result.Warehouse}
+                {nameof(result.WarehouseCountry)}: {result.WarehouseCountry}
+                {nameof(result.IsHazmat)}: {result.IsHazmat}";
     }
 
-    [KernelFunction(nameof(GetEmailContent))]
-    [Description("Write a email text content for a customer with a proposal quote related to the part number. Offer write a email if the part nume is in stock.")]
-    public string GetEmailContent(
-        [Description("The part number to write the email.")] string partNumber)
+    [KernelFunction(GenerateEmailTextFuncName)]
+    [Description("Generate email text of a part number.")]
+    public string GenerateEmailText(
+        [Description("The part number to generate email text.")] string partNumber)
     {
         var data = _partCatalogService.GetPartCatalog(partNumber);
         return data is not null
@@ -57,6 +54,6 @@ public class PartCatalogPlugin
               $"Please let us know if you would like to proceed with the purchase.\n\n" +
               $"Best regards,\n" +
               $"Customer Support Team"
-            : "Part Number is not in stock";
+            : "Part Number is out of stock";
     }
 }
