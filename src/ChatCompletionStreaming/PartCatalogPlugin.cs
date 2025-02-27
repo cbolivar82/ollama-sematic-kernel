@@ -8,7 +8,7 @@ namespace ChatCompletionStreaming;
 public class PartCatalogPlugin
 {
     public const string GenerateEmailTextFuncName = "generate_email_text";
-    public const string RetrivePartNumberRecordFuncName = "retrive_part_number_information";
+    public const string RetrivePartNumberRecordFuncName = "check_part_number_in_stock_and_retrive_details";
     private readonly IPartCatalogService _partCatalogService;
 
     public PartCatalogPlugin(IPartCatalogService partCatalogService)
@@ -17,7 +17,8 @@ public class PartCatalogPlugin
     }
 
     [KernelFunction(RetrivePartNumberRecordFuncName)]
-    [Description(@"Check if the part number is stock and retrieve Part Number Details")]
+    [Description(@"Check if the part number is in stock and retrieve Part Number Details")]
+    [return: Description("Part Number is in stock with the Details.")]
     public string RetreivePartNumberInfo(
         [Description("The part number to retrieve.")] string partNumber)
     {

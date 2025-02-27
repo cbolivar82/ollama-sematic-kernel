@@ -69,15 +69,11 @@ Assistant Response: Part ABC123 is in stock and here are the details:
 
 User Input: Check part number ABC123
 Intent: {PartCatalogPlugin.RetrivePartNumberRecordFuncName}
-Assistant Response: Part ABC123 is in stock and here are the details:
-    Quantity: 10
-    UnitOfMeasure: EA
-    Price: 100.00
-    Warehouse: A
-    WarehouseCountry: USA
-    IsHazmat: False
+
+User Input: Write email text
+Intent: {PartCatalogPlugin.GenerateEmailTextFuncName}. Use the latest part number details to write a email for a customer quote.
         
-User Input: Can you generate email text?
+User Input: Can you generate email text for part number ABC123?
 Intent: {PartCatalogPlugin.GenerateEmailTextFuncName}
 """);
 
