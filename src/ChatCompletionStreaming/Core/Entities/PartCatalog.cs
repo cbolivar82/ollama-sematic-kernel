@@ -12,7 +12,7 @@ public class PartCatalog
     [Description("Define the Part Number")]
     public string PartNumber { get; set; } = string.Empty;
 
-    [JsonPropertyName("part_description")]
+    [JsonPropertyName("description")]
     [Description("Description of the part number")]
     public string Description { get; set; } = string.Empty;
 

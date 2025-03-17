@@ -2,7 +2,7 @@
     {
         "id": "bca4427a-42c4-4da2-a9b5-660dba9d6fd1",
         "part_number": "66-10344-1",
-        "part_description": "NUT",
+        "description": "NUT",
         "available_quantity": 909,
         "condition_code": "New",
         "warehouse_name": "Atlanta, GA",
@@ -11,16 +11,16 @@
     {
         "id": "d0f3312c-2f13-49e8-acba-da065a535104",
         "part_number": "235",
-        "part_description": "SCREW",
+        "description": "SCREW",
         "available_quantity": 358,
         "condition_code": "New",
         "warehouse_name": "Atlanta, GA",
-        "unit_price": 918.34
+        "unit_price": 100.00
     },
     {
         "id": "5206f0d5-89b4-4d25-aef3-d4c64586f4e7",
         "part_number": "BACB30XD3K11",
-        "part_description": "BOLT",
+        "description": "BOLT",
         "available_quantity": 868,
         "condition_code": "New",
         "warehouse_name": "Beijing, CN",
@@ -29,7 +29,7 @@
     {
         "id": "88a881ba-1894-4c6c-a84f-43a8df49c6ad",
         "part_number": "3239446-1",
-        "part_description": "GLIDE RING",
+        "description": "GLIDE RING",
         "available_quantity": 927,
         "condition_code": "New",
         "warehouse_name": "Dallas Central",
@@ -38,7 +38,7 @@
     {
         "id": "d731af32-d8bd-4cd3-8f4e-47af95ae7978",
         "part_number": "60-4857-1",
-        "part_description": "LAMP ASSY",
+        "description": "LAMP ASSY",
         "available_quantity": 790,
         "condition_code": "New",
         "warehouse_name": "Dallas Central",
@@ -47,7 +47,7 @@
     {
         "id": "4c1d63ef-9e23-44a9-978b-abd24c068011",
         "part_number": "076308-86434",
-        "part_description": "3M 07630886434 SCOTCHWELD EPX MIXING NOZZL",
+        "description": "3M 07630886434 SCOTCHWELD EPX MIXING NOZZL",
         "available_quantity": 944,
         "condition_code": "New",
         "warehouse_name": "Dallas Central",
@@ -56,7 +56,7 @@
     {
         "id": "467c88fa-b40f-4109-986d-593f2d887b6f",
         "part_number": "133440H034",
-        "part_description": "FAIRING REAR",
+        "description": "FAIRING REAR",
         "available_quantity": 885,
         "condition_code": "New",
         "warehouse_name": "DASI Miami",
@@ -65,7 +65,7 @@
     {
         "id": "20390285-e81f-4f05-9bec-00106c662d51",
         "part_number": "3177651-1",
-        "part_description": "RING,GUIDE",
+        "description": "RING,GUIDE",
         "available_quantity": 944,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -74,7 +74,7 @@
     {
         "id": "6ec4dcb9-02f8-42f8-a955-073ef2012e56",
         "part_number": "Z111H1100006",
-        "part_description": "FRAME",
+        "description": "FRAME",
         "available_quantity": 297,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -83,7 +83,7 @@
     {
         "id": "d3afc13f-e536-4038-8a02-09d1cbde7c59",
         "part_number": "22224BC030006L",
-        "part_description": "SCREW",
+        "description": "SCREW",
         "available_quantity": 280,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -92,7 +92,7 @@
     {
         "id": "64dbceb7-ff5a-4270-846a-0db198a11aa2",
         "part_number": "S632AD080100026",
-        "part_description": "ring",
+        "description": "ring",
         "available_quantity": 799,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -101,7 +101,7 @@
     {
         "id": "b6fa7e48-87ba-4586-8980-195a2714427a",
         "part_number": "E0244-28A0",
-        "part_description": "RELAY",
+        "description": "RELAY",
         "available_quantity": 383,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -110,7 +110,7 @@
     {
         "id": "78f879c6-6d47-41ae-9dc4-2691525a29f7",
         "part_number": "238-0251-515",
-        "part_description": "BRACKET X CFM56",
+        "description": "BRACKET X CFM56",
         "available_quantity": 660,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -119,7 +119,7 @@
     {
         "id": "b8a7e0c0-6399-4b25-94d9-284510b96db5",
         "part_number": "6742-36A",
-        "part_description": "RING",
+        "description": "RING",
         "available_quantity": 758,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -128,7 +128,7 @@
     {
         "id": "76627167-791e-4b97-83da-2847a0972b35",
         "part_number": "238-0255-503",
-        "part_description": "RETAINER",
+        "description": "RETAINER",
         "available_quantity": 424,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -137,7 +137,7 @@
     {
         "id": "d34fadc4-8d98-488c-868a-31386921c283",
         "part_number": "72E61-1",
-        "part_description": "DIAPHRAGM ASSY",
+        "description": "DIAPHRAGM ASSY",
         "available_quantity": 197,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -146,7 +146,7 @@
     {
         "id": "0e7d4166-4d55-4e53-b07b-331155818dc0",
         "part_number": "3455-24",
-        "part_description": "DUCT COMPRESSOR",
+        "description": "DUCT COMPRESSOR",
         "available_quantity": 600,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -155,7 +155,7 @@
     {
         "id": "d9ade0af-1fae-4e1b-a120-354422d33b5e",
         "part_number": "M83P1801A",
-        "part_description": "MICROPHONEHAND",
+        "description": "MICROPHONEHAND",
         "available_quantity": 315,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -164,7 +164,7 @@
     {
         "id": "8d2c9eff-c8ab-431f-a721-4351d5c9297e",
         "part_number": "107642AA03",
-        "part_description": "SWITCH FOR ACP2788AB04",
+        "description": "SWITCH FOR ACP2788AB04",
         "available_quantity": 639,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -173,7 +173,7 @@
     {
         "id": "ba77d4fe-d84b-498d-9413-44d0780f4586",
         "part_number": "03-1840-0000",
-        "part_description": "SOCKET",
+        "description": "SOCKET",
         "available_quantity": 219,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -182,7 +182,7 @@
     {
         "id": "be3a6c3e-39d6-4daa-9978-472b4135461f",
         "part_number": "5470-09",
-        "part_description": "KNOBEQUIPPED",
+        "description": "KNOBEQUIPPED",
         "available_quantity": 611,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -191,7 +191,7 @@
     {
         "id": "7425d488-bece-4c31-818a-48ed2077f73e",
         "part_number": "3455-71",
-        "part_description": "SEAL",
+        "description": "SEAL",
         "available_quantity": 426,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -200,7 +200,7 @@
     {
         "id": "12ebbe51-3b9e-4376-aac5-4da6b9bf00ff",
         "part_number": "V80P412-2-2-198",
-        "part_description": "BLOWER FAN",
+        "description": "BLOWER FAN",
         "available_quantity": 774,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -209,7 +209,7 @@
     {
         "id": "6064606b-47db-4e9b-a1e6-4ebd3b8310fe",
         "part_number": "03-1829-0000",
-        "part_description": "POWER ASSY",
+        "description": "POWER ASSY",
         "available_quantity": 568,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -218,7 +218,7 @@
     {
         "id": "10e82516-ed2f-46c6-b00d-5143a9f4eb44",
         "part_number": "23111CA100",
-        "part_description": "WASHER",
+        "description": "WASHER",
         "available_quantity": 632,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -227,7 +227,7 @@
     {
         "id": "5b68a5af-a2df-426b-9f43-56e79c7664c5",
         "part_number": "2368-501",
-        "part_description": "OUTLETAIR",
+        "description": "OUTLETAIR",
         "available_quantity": 661,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -236,7 +236,7 @@
     {
         "id": "e4ae99c3-d77a-4cc4-a1c7-5e22aa8f05c5",
         "part_number": "D38999/26KB98SN",
-        "part_description": "PLUG",
+        "description": "PLUG",
         "available_quantity": 397,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -245,7 +245,7 @@
     {
         "id": "9aeca4e8-2583-431a-a013-624322ca4f6c",
         "part_number": "9112A0026-01",
-        "part_description": "BELLOWS",
+        "description": "BELLOWS",
         "available_quantity": 1000,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -254,7 +254,7 @@
     {
         "id": "1b782ac5-61f9-4719-9345-63c0f4cc488d",
         "part_number": "3455-42",
-        "part_description": "TUBE OBTURATOR",
+        "description": "TUBE OBTURATOR",
         "available_quantity": 688,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -263,7 +263,7 @@
     {
         "id": "fe438247-cd89-4095-ab56-691f82f0f2ae",
         "part_number": "29120B2140089Z",
-        "part_description": "LENSGREEN",
+        "description": "LENSGREEN",
         "available_quantity": 864,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -272,7 +272,7 @@
     {
         "id": "0b8d5327-0587-49ee-955f-6afa503a3868",
         "part_number": "I-E8-12S",
-        "part_description": "SEAL",
+        "description": "SEAL",
         "available_quantity": 600,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -281,7 +281,7 @@
     {
         "id": "9f0ff835-5824-4baa-a319-6c336469fe01",
         "part_number": "212002205",
-        "part_description": "CLAMP",
+        "description": "CLAMP",
         "available_quantity": 737,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -290,7 +290,7 @@
     {
         "id": "3247074c-cf63-4c7d-aabc-6d55d81bd4bf",
         "part_number": "740-0104-29",
-        "part_description": "SEAL",
+        "description": "SEAL",
         "available_quantity": 990,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -299,7 +299,7 @@
     {
         "id": "623b0d86-0274-4966-97e7-6dea2f48a0f9",
         "part_number": "4442010030",
-        "part_description": "LENS",
+        "description": "LENS",
         "available_quantity": 383,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -308,7 +308,7 @@
     {
         "id": "32cab52a-4ce3-4319-b279-83cedc270285",
         "part_number": "29100A2140228L",
-        "part_description": "REFLECTING MIRROR",
+        "description": "REFLECTING MIRROR",
         "available_quantity": 781,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -317,7 +317,7 @@
     {
         "id": "852da562-0b98-4b08-b076-8447c2848516",
         "part_number": "R01000X200A20B6",
-        "part_description": "ORING",
+        "description": "ORING",
         "available_quantity": 667,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -326,7 +326,7 @@
     {
         "id": "9791def7-1d55-4ac5-b800-862b19086ac5",
         "part_number": "6740-83",
-        "part_description": "BODY, REGULATOR",
+        "description": "BODY, REGULATOR",
         "available_quantity": 539,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -335,7 +335,7 @@
     {
         "id": "8fdb97f9-c592-46f5-a97f-994bd8f18661",
         "part_number": "810-0002",
-        "part_description": "BUSH",
+        "description": "BUSH",
         "available_quantity": 633,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -344,7 +344,7 @@
     {
         "id": "63b6e998-29a2-4c50-91a7-9f98a32eb0df",
         "part_number": "106339RE02",
-        "part_description": "GASKET",
+        "description": "GASKET",
         "available_quantity": 493,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -353,7 +353,7 @@
     {
         "id": "3021e1da-aedb-43fc-927f-a04643f2c08b",
         "part_number": "94454-3",
-        "part_description": "DIAPHRAGM ASSY",
+        "description": "DIAPHRAGM ASSY",
         "available_quantity": 965,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -362,7 +362,7 @@
     {
         "id": "8705b8d2-d4d1-4e8e-aa2a-a0e0482594e6",
         "part_number": "Z111H1103006",
-        "part_description": "FRAME",
+        "description": "FRAME",
         "available_quantity": 453,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -371,7 +371,7 @@
     {
         "id": "f49cb64c-d3a4-470f-a9dc-a4915ac44c42",
         "part_number": "238-0808-507",
-        "part_description": "MAST",
+        "description": "MAST",
         "available_quantity": 312,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -380,7 +380,7 @@
     {
         "id": "ff54fea6-8627-4d02-9f44-a5c4c4de2d7b",
         "part_number": "22220BC040016L",
-        "part_description": "FASTENER",
+        "description": "FASTENER",
         "available_quantity": 824,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -389,7 +389,7 @@
     {
         "id": "2885bb09-359b-4754-8c1a-b996bb769dd5",
         "part_number": "6742-42",
-        "part_description": "RING",
+        "description": "RING",
         "available_quantity": 416,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -398,7 +398,7 @@
     {
         "id": "6aec441d-400d-4ebe-8263-ba331192744c",
         "part_number": "E0355-01",
-        "part_description": "LAMP",
+        "description": "LAMP",
         "available_quantity": 591,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -407,7 +407,7 @@
     {
         "id": "12a7fa04-92a9-422e-a6d5-ba992e02e085",
         "part_number": "E0244-28A0",
-        "part_description": "RELAY",
+        "description": "RELAY",
         "available_quantity": 366,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -416,7 +416,7 @@
     {
         "id": "9e757c3e-6d79-4dd0-abca-c19b06c8e4de",
         "part_number": "23111CC040",
-        "part_description": "WASHER WASHER",
+        "description": "WASHER WASHER",
         "available_quantity": 177,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -425,7 +425,7 @@
     {
         "id": "39e91410-de7c-4152-9cc1-c37916218e74",
         "part_number": "E0246-28A0",
-        "part_description": "RELAY",
+        "description": "RELAY",
         "available_quantity": 945,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -434,7 +434,7 @@
     {
         "id": "1c5d3b3a-a7e3-44ba-ae54-c6caa9e75341",
         "part_number": "S4633A04P",
-        "part_description": "ring shouldered",
+        "description": "ring shouldered",
         "available_quantity": 960,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -443,7 +443,7 @@
     {
         "id": "2af10333-20ec-4286-a054-ca67d79feaef",
         "part_number": "4375476Y01",
-        "part_description": "CABLE,ELECTRIC",
+        "description": "CABLE,ELECTRIC",
         "available_quantity": 439,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -452,7 +452,7 @@
     {
         "id": "675e4ad2-4755-4e59-8abc-cc3cf2bd43d7",
         "part_number": "03-1850-0000",
-        "part_description": "FLASHTUBE ASSEMBLY",
+        "description": "FLASHTUBE ASSEMBLY",
         "available_quantity": 556,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -461,7 +461,7 @@
     {
         "id": "0d4b575a-20f5-4e79-84e3-cc9329fcaad3",
         "part_number": "A0250103-19",
-        "part_description": "SEAL",
+        "description": "SEAL",
         "available_quantity": 813,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -470,7 +470,7 @@
     {
         "id": "a254b5aa-0052-4653-9f3c-da3e7e2ee135",
         "part_number": "S105DN0400A5",
-        "part_description": "RING",
+        "description": "RING",
         "available_quantity": 227,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -479,7 +479,7 @@
     {
         "id": "f5d87ff3-983f-46f1-8b6f-e0dfdf3f6f43",
         "part_number": "224-2301-143",
-        "part_description": "WEAR STRIP",
+        "description": "WEAR STRIP",
         "available_quantity": 604,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -488,7 +488,7 @@
     {
         "id": "7ddaf267-7fcc-45e3-bc77-ee527f1af3bc",
         "part_number": "D5281004321200",
-        "part_description": "BUSH",
+        "description": "BUSH",
         "available_quantity": 418,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -497,7 +497,7 @@
     {
         "id": "adff7e55-f35f-48b0-b3cb-eed85a9d2cee",
         "part_number": "601C1313-007",
-        "part_description": "FIRESEAL",
+        "description": "FIRESEAL",
         "available_quantity": 679,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -506,7 +506,7 @@
     {
         "id": "16ab9944-3a0f-4d29-9f8a-f2e21814bb6e",
         "part_number": "D5281004420600",
-        "part_description": "SHOULDERED BUSH",
+        "description": "SHOULDERED BUSH",
         "available_quantity": 876,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -515,7 +515,7 @@
     {
         "id": "bc36e114-7de3-4aa8-af9c-f74b88fe914a",
         "part_number": "22220BC040010L",
-        "part_description": "SCREW",
+        "description": "SCREW",
         "available_quantity": 689,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -524,7 +524,7 @@
     {
         "id": "040b49bb-515f-4b9a-a7aa-f8c999932872",
         "part_number": "A0250103-19",
-        "part_description": "SEAL",
+        "description": "SEAL",
         "available_quantity": 282,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -533,7 +533,7 @@
     {
         "id": "91c423f3-d85d-4080-bbc5-fe47415fbb27",
         "part_number": "778A3700-01",
-        "part_description": "PIPE",
+        "description": "PIPE",
         "available_quantity": 830,
         "condition_code": "New",
         "warehouse_name": "Deerfield Beach, FL",
@@ -542,7 +542,7 @@
     {
         "id": "307ac1e1-8b7e-41e9-96a4-9462abfb4cf4",
         "part_number": "NAS514P428-8",
-        "part_description": "SCREW",
+        "description": "SCREW",
         "available_quantity": 175,
         "condition_code": "New",
         "warehouse_name": "Atlanta, GA",
@@ -551,7 +551,7 @@
     {
         "id": "2a2341bc-7588-472d-ad9e-c3402af46472",
         "part_number": "66-10344-1",
-        "part_description": "NUT",
+        "description": "NUT",
         "available_quantity": 324,
         "condition_code": "New",
         "warehouse_name": "Atlanta, GA",
@@ -560,7 +560,7 @@
     {
         "id": "42cd44ea-11e6-4e31-9849-a93e47c5d9ba",
         "part_number": "BACB30XD3K11",
-        "part_description": "BOLT",
+        "description": "BOLT",
         "available_quantity": 794,
         "condition_code": "New",
         "warehouse_name": "Beijing, CN",
@@ -569,7 +569,7 @@
     {
         "id": "fb2b6712-2c00-4a3d-85d2-4513028ae339",
         "part_number": "076308-86434",
-        "part_description": "3M 07630886434 SCOTCHWELD EPX MIXING NOZZL",
+        "description": "3M 07630886434 SCOTCHWELD EPX MIXING NOZZL",
         "available_quantity": 560,
         "condition_code": "New",
         "warehouse_name": "Dallas Central",
@@ -578,7 +578,7 @@
     {
         "id": "75f1ba50-102e-4acc-bebf-587f3001010e",
         "part_number": "3239446-1",
-        "part_description": "GLIDE RING",
+        "description": "GLIDE RING",
         "available_quantity": 496,
         "condition_code": "New",
         "warehouse_name": "Dallas Central",
@@ -587,7 +587,7 @@
     {
         "id": "d4ff126a-a5df-42ef-ac6a-abd2df0578be",
         "part_number": "60-4857-1",
-        "part_description": "LAMP ASSY",
+        "description": "LAMP ASSY",
         "available_quantity": 193,
         "condition_code": "New",
         "warehouse_name": "Dallas Central",
@@ -596,7 +596,7 @@
     {
         "id": "ca596765-561e-490f-844e-18c60ee2f655",
         "part_number": "133440H034",
-        "part_description": "FAIRING REAR",
+        "description": "FAIRING REAR",
         "available_quantity": 720,
         "condition_code": "New",
         "warehouse_name": "DASI Miami",
@@ -605,7 +605,7 @@
     {
         "id": "406a286b-a64a-4054-aaa1-457caa32a0d3",
         "part_number": "150180",
-        "part_description": "STATOR &HOUSING ASSY",
+        "description": "STATOR &HOUSING ASSY",
         "available_quantity": 215,
         "condition_code": "New Surplus",
         "warehouse_name": "Glendale, AZ",
@@ -614,7 +614,7 @@
     {
         "id": "ad8a6400-9c6a-4402-bc60-4b78bc650621",
         "part_number": "3A2355",
-        "part_description": "SUPPORT",
+        "description": "SUPPORT",
         "available_quantity": 963,
         "condition_code": "New Surplus",
         "warehouse_name": "Glendale, AZ",
@@ -623,7 +623,7 @@
     {
         "id": "3c4ff09a-06a8-4486-ae12-0b403f48fc60",
         "part_number": "245-691",
-        "part_description": "RING: RETAINING",
+        "description": "RING: RETAINING",
         "available_quantity": 144,
         "condition_code": "New",
         "warehouse_name": "Miami, FL",
@@ -632,7 +632,7 @@
     {
         "id": "a3528a70-446b-4511-bc47-4cc952c0d52a",
         "part_number": "EC22NTM02",
-        "part_description": "NUT",
+        "description": "NUT",
         "available_quantity": 515,
         "condition_code": "New",
         "warehouse_name": "Miami, FL",
@@ -641,7 +641,7 @@
     {
         "id": "ce41a9dc-5c36-4d02-b64e-4d7c266d2d64",
         "part_number": "GR3451",
-        "part_description": "SEAL",
+        "description": "SEAL",
         "available_quantity": 886,
         "condition_code": "New",
         "warehouse_name": "Miami, FL",
@@ -650,7 +650,7 @@
     {
         "id": "da02061f-008e-4e58-a402-99eab16da7d2",
         "part_number": "P01074-101",
-        "part_description": "LIFEVEST",
+        "description": "LIFEVEST",
         "available_quantity": 116,
         "condition_code": "New",
         "warehouse_name": "Miami, FL",
@@ -659,7 +659,7 @@
     {
         "id": "e7967e4f-e006-4152-af6f-a6e606594909",
         "part_number": "9GX852221-00",
-        "part_description": "CAP PROTECTING",
+        "description": "CAP PROTECTING",
         "available_quantity": 490,
         "condition_code": "New",
         "warehouse_name": "Miami, FL",
@@ -668,7 +668,7 @@
     {
         "id": "ce9fa32a-68dc-485c-8ae4-1a7cc6ef9b1f",
         "part_number": "14R02-08C",
-        "part_description": "SLEEVE",
+        "description": "SLEEVE",
         "available_quantity": 936,
         "condition_code": "New",
         "warehouse_name": "Orlando, FL",
@@ -677,7 +677,7 @@
     {
         "id": "eb485cd1-628e-4246-84e6-24a94445dc9d",
         "part_number": "2383S0401G1401BP",
-        "part_description": "STUD GROMMET",
+        "description": "STUD GROMMET",
         "available_quantity": 802,
         "condition_code": "New",
         "warehouse_name": "Orlando, FL",
@@ -686,7 +686,7 @@
     {
         "id": "91b06fa8-e9c6-46ef-acf1-38256620f044",
         "part_number": "7014664-902",
-        "part_description": "BATTERY ASY",
+        "description": "BATTERY ASY",
         "available_quantity": 205,
         "condition_code": "New",
         "warehouse_name": "Orlando, FL",
@@ -695,7 +695,7 @@
     {
         "id": "dd089ac5-e64a-4f05-b334-ddfda9cac736",
         "part_number": "43-1247",
-        "part_description": "BOLT",
+        "description": "BOLT",
         "available_quantity": 368,
         "condition_code": "New",
         "warehouse_name": "Orlando, FL",
@@ -704,7 +704,7 @@
     {
         "id": "6b20025b-f889-4186-aaf3-e9867240fe08",
         "part_number": "CSS122",
-        "part_description": "CONN",
+        "description": "CONN",
         "available_quantity": 193,
         "condition_code": "New",
         "warehouse_name": "Orlando, FL",
@@ -713,7 +713,7 @@
     {
         "id": "5a9e576d-3f3f-463d-9ae6-f7c6fb1b68f4",
         "part_number": "7593395-001",
-        "part_description": "FILTER ELEMENT. LUBE",
+        "description": "FILTER ELEMENT. LUBE",
         "available_quantity": 165,
         "condition_code": "New",
         "warehouse_name": "Orlando, FL",
@@ -722,7 +722,7 @@
     {
         "id": "654e397f-3bef-4309-95fa-fbd6053d279d",
         "part_number": "CDSP1904-503",
-        "part_description": "FITTING",
+        "description": "FITTING",
         "available_quantity": 246,
         "condition_code": "New",
         "warehouse_name": "Orlando, FL",
@@ -731,7 +731,7 @@
     {
         "id": "801b98d6-0a10-41aa-a89e-011273ac2104",
         "part_number": "A32010",
-        "part_description": "SPLIT RING",
+        "description": "SPLIT RING",
         "available_quantity": 551,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -740,7 +740,7 @@
     {
         "id": "f7cfb9fa-2979-4418-a36a-033c4d4c0406",
         "part_number": "22296AG030006L",
-        "part_description": "SCREW",
+        "description": "SCREW",
         "available_quantity": 185,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -749,7 +749,7 @@
     {
         "id": "a6cde61a-0100-4100-8bfd-04937c9ea209",
         "part_number": "NAS1149D0416H",
-        "part_description": "WASHER",
+        "description": "WASHER",
         "available_quantity": 889,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -758,7 +758,7 @@
     {
         "id": "00690ef2-a18d-47dc-aa9f-0503b0a628f8",
         "part_number": "170-16705-901",
-        "part_description": "PLACARD..REF AOG# EE02",
+        "description": "PLACARD..REF AOG# EE02",
         "available_quantity": 615,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -767,7 +767,7 @@
     {
         "id": "03028337-a93f-4df6-86fa-05c8effb5c38",
         "part_number": "170-01108-408",
-        "part_description": "NACA",
+        "description": "NACA",
         "available_quantity": 972,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -776,7 +776,7 @@
     {
         "id": "f44cbcdd-7129-4136-9a35-06231dee4fbd",
         "part_number": "OP633-18",
-        "part_description": "CLAMP",
+        "description": "CLAMP",
         "available_quantity": 848,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -785,7 +785,7 @@
     {
         "id": "f2d164d2-a320-4b68-b2b9-0c597fb89b80",
         "part_number": "20133",
-        "part_description": "WASHER, LOCK",
+        "description": "WASHER, LOCK",
         "available_quantity": 474,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -794,7 +794,7 @@
     {
         "id": "fb0e5ca2-3f71-4a9c-a5fc-11fdde8d3b77",
         "part_number": "CSR90433-4F-6",
-        "part_description": "RIVET,SOLIDCOUNTERSUNK HEAD 100 DEG,HOLLOW END,TI",
+        "description": "RIVET,SOLIDCOUNTERSUNK HEAD 100 DEG,HOLLOW END,TI",
         "available_quantity": 270,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -803,7 +803,7 @@
     {
         "id": "0bf7c1de-a97a-4bba-b614-12932050a404",
         "part_number": "170-32456-403",
-        "part_description": "SHROUD2 A",
+        "description": "SHROUD2 A",
         "available_quantity": 659,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -812,7 +812,7 @@
     {
         "id": "255e3781-cee2-471f-9c89-1427a74ecc22",
         "part_number": "NAS73-5E006",
-        "part_description": "BUSHING, STEEL",
+        "description": "BUSHING, STEEL",
         "available_quantity": 482,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -821,7 +821,7 @@
     {
         "id": "838e5e97-fd89-4aaf-9437-145b7efd307c",
         "part_number": "NAS1149D0416H",
-        "part_description": "WASHER",
+        "description": "WASHER",
         "available_quantity": 877,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -830,7 +830,7 @@
     {
         "id": "69579289-14ff-44a1-bf02-17137a7791cb",
         "part_number": "120-39711-021",
-        "part_description": "TUBE ASSY",
+        "description": "TUBE ASSY",
         "available_quantity": 220,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -839,7 +839,7 @@
     {
         "id": "26abada8-fefa-4c63-864f-17bd0f83ad79",
         "part_number": "M8791/1-122",
-        "part_description": "RETAINER RING",
+        "description": "RETAINER RING",
         "available_quantity": 377,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -848,7 +848,7 @@
     {
         "id": "24e6f908-2649-4cd0-a734-1ce22eabfc1f",
         "part_number": "HST315-6-5",
-        "part_description": "PIN SCREW",
+        "description": "PIN SCREW",
         "available_quantity": 488,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -857,7 +857,7 @@
     {
         "id": "24d3ad8e-e0f8-48c7-86e0-216b6d723089",
         "part_number": "M7885/2-4-02",
-        "part_description": "RIVET, BLIND, PROTRUDING HD",
+        "description": "RIVET, BLIND, PROTRUDING HD",
         "available_quantity": 143,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -866,7 +866,7 @@
     {
         "id": "b1ca7df1-6cbd-46ba-a740-22acff5c2ec4",
         "part_number": "HL70-5",
-        "part_description": "COLLAR",
+        "description": "COLLAR",
         "available_quantity": 532,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -875,7 +875,7 @@
     {
         "id": "4dd082be-0b16-4ee0-b17d-234f2287f3c2",
         "part_number": "20420-000-01",
-        "part_description": "TUBE ASSY",
+        "description": "TUBE ASSY",
         "available_quantity": 421,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -884,7 +884,7 @@
     {
         "id": "bf1533e4-414d-462a-9ad9-266f8479f664",
         "part_number": "80-797",
-        "part_description": "WASHER",
+        "description": "WASHER",
         "available_quantity": 110,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -893,7 +893,7 @@
     {
         "id": "d5918d83-171b-4512-b92c-282fdc0a01f2",
         "part_number": "NAS1149D0416H",
-        "part_description": "WASHER",
+        "description": "WASHER",
         "available_quantity": 225,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -902,7 +902,7 @@
     {
         "id": "0c3b0007-a104-4aab-b3a7-2b1adced414d",
         "part_number": "MS51830A202L",
-        "part_description": "INSERT",
+        "description": "INSERT",
         "available_quantity": 554,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -911,7 +911,7 @@
     {
         "id": "69d0c667-4beb-4c5d-847d-2cffee6b7147",
         "part_number": "320HS005M0911",
-        "part_description": "STRAIGHT ADAPTE",
+        "description": "STRAIGHT ADAPTE",
         "available_quantity": 322,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -920,7 +920,7 @@
     {
         "id": "877581d6-908b-4e9c-8a51-2e79d3ae16e9",
         "part_number": "HST315-6-6",
-        "part_description": "HILITE PIN,CSK HEAD,130 DEG",
+        "description": "HILITE PIN,CSK HEAD,130 DEG",
         "available_quantity": 340,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -929,7 +929,7 @@
     {
         "id": "8703bbc2-a43e-4d39-8938-30290a9e24a8",
         "part_number": "NAS1149D0416H",
-        "part_description": "WASHER",
+        "description": "WASHER",
         "available_quantity": 894,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -938,7 +938,7 @@
     {
         "id": "d9724269-887c-4e57-b374-309388c542c7",
         "part_number": "NAS514P632-9",
-        "part_description": "SCREW",
+        "description": "SCREW",
         "available_quantity": 818,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -947,7 +947,7 @@
     {
         "id": "5f4c9265-a20c-4008-b16a-3114878cf114",
         "part_number": "12 C6BU-SS",
-        "part_description": "FITTINGWATER/WASTE SYS,S STEEL",
+        "description": "FITTINGWATER/WASTE SYS,S STEEL",
         "available_quantity": 506,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -956,7 +956,7 @@
     {
         "id": "0a05decd-8695-4629-af60-317ec6ae6850",
         "part_number": "PE21101-3-3T",
-        "part_description": "SCREW",
+        "description": "SCREW",
         "available_quantity": 409,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -965,7 +965,7 @@
     {
         "id": "5a66e719-6eb9-4c52-aa42-324396581e33",
         "part_number": "MS27380-1",
-        "part_description": "LANYARD",
+        "description": "LANYARD",
         "available_quantity": 410,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -974,7 +974,7 @@
     {
         "id": "4546756d-c1cd-4973-9013-337d0bde43ed",
         "part_number": "D10008D06",
-        "part_description": "JOINT",
+        "description": "JOINT",
         "available_quantity": 772,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -983,7 +983,7 @@
     {
         "id": "15900961-a8ea-49e2-aede-338dcd00188c",
         "part_number": "190-38523-001",
-        "part_description": "RETAINER,SEAL",
+        "description": "RETAINER,SEAL",
         "available_quantity": 779,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -992,7 +992,7 @@
     {
         "id": "53dfeccb-77ce-4d8e-bda1-34b30e304176",
         "part_number": "MS35275-230",
-        "part_description": "SCREW",
+        "description": "SCREW",
         "available_quantity": 922,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1001,7 +1001,7 @@
     {
         "id": "fc9c677d-ca40-4d18-bce7-36ade8409666",
         "part_number": "HST410BJ-8-4",
-        "part_description": "PIN,THREADED",
+        "description": "PIN,THREADED",
         "available_quantity": 734,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1010,7 +1010,7 @@
     {
         "id": "99b049d9-e823-49e4-b90f-371739d48400",
         "part_number": "120-13016-001",
-        "part_description": "BUSHING",
+        "description": "BUSHING",
         "available_quantity": 538,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1019,7 +1019,7 @@
     {
         "id": "5b3ce970-66bc-48b1-872a-388df528afc9",
         "part_number": "CR3224-4-2",
-        "part_description": "RIVET",
+        "description": "RIVET",
         "available_quantity": 354,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1028,7 +1028,7 @@
     {
         "id": "370ce61d-1856-4bc3-9f86-3ba6fc999d2b",
         "part_number": "M45932/1-9CL",
-        "part_description": "INSERT,THREADEDSELF LOCKING,CRES",
+        "description": "INSERT,THREADEDSELF LOCKING,CRES",
         "available_quantity": 725,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1037,7 +1037,7 @@
     {
         "id": "f57e395b-9f1a-47c8-844b-3e417f45c8b5",
         "part_number": "145-24497-403",
-        "part_description": "TUBE ASSY RETURN SYS 1",
+        "description": "TUBE ASSY RETURN SYS 1",
         "available_quantity": 682,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1046,7 +1046,7 @@
     {
         "id": "827d1902-8d2f-4695-a28f-3f998be1e15c",
         "part_number": "MS24524-27",
-        "part_description": "SWITCH",
+        "description": "SWITCH",
         "available_quantity": 456,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1055,7 +1055,7 @@
     {
         "id": "abdf61d5-1537-4f42-aa72-40b3e3368e66",
         "part_number": "CR3523-4-03",
-        "part_description": "RIVET,BLINDUNIVERSAL HEAD,MONEL",
+        "description": "RIVET,BLINDUNIVERSAL HEAD,MONEL",
         "available_quantity": 752,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1064,7 +1064,7 @@
     {
         "id": "a110b5a4-b589-4520-bc74-43422ef29ca9",
         "part_number": "NAS1149D0416H",
-        "part_description": "WASHER",
+        "description": "WASHER",
         "available_quantity": 571,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1073,7 +1073,7 @@
     {
         "id": "72c1e737-c058-485d-90fd-46c6c4dcc09b",
         "part_number": "OP633-9A",
-        "part_description": "CLAMP",
+        "description": "CLAMP",
         "available_quantity": 419,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1082,7 +1082,7 @@
     {
         "id": "307ac1e1-8b7e-41e9-96a4-9462abfb4cf4",
         "part_number": "NAS514P428-8",
-        "part_description": "SCREW",
+        "description": "SCREW",
         "available_quantity": 175,
         "condition_code": "New",
         "warehouse_name": "Atlanta, GA",
@@ -1091,7 +1091,7 @@
     {
         "id": "2a2341bc-7588-472d-ad9e-c3402af46472",
         "part_number": "66-10344-1",
-        "part_description": "NUT",
+        "description": "NUT",
         "available_quantity": 324,
         "condition_code": "New",
         "warehouse_name": "Atlanta, GA",
@@ -1100,7 +1100,7 @@
     {
         "id": "42cd44ea-11e6-4e31-9849-a93e47c5d9ba",
         "part_number": "BACB30XD3K11",
-        "part_description": "BOLT",
+        "description": "BOLT",
         "available_quantity": 794,
         "condition_code": "New",
         "warehouse_name": "Beijing, CN",
@@ -1109,7 +1109,7 @@
     {
         "id": "fb2b6712-2c00-4a3d-85d2-4513028ae339",
         "part_number": "076308-86434",
-        "part_description": "3M 07630886434 SCOTCHWELD EPX MIXING NOZZL",
+        "description": "3M 07630886434 SCOTCHWELD EPX MIXING NOZZL",
         "available_quantity": 560,
         "condition_code": "New",
         "warehouse_name": "Dallas Central",
@@ -1118,7 +1118,7 @@
     {
         "id": "75f1ba50-102e-4acc-bebf-587f3001010e",
         "part_number": "3239446-1",
-        "part_description": "GLIDE RING",
+        "description": "GLIDE RING",
         "available_quantity": 496,
         "condition_code": "New",
         "warehouse_name": "Dallas Central",
@@ -1127,7 +1127,7 @@
     {
         "id": "d4ff126a-a5df-42ef-ac6a-abd2df0578be",
         "part_number": "60-4857-1",
-        "part_description": "LAMP ASSY",
+        "description": "LAMP ASSY",
         "available_quantity": 193,
         "condition_code": "New",
         "warehouse_name": "Dallas Central",
@@ -1136,7 +1136,7 @@
     {
         "id": "ca596765-561e-490f-844e-18c60ee2f655",
         "part_number": "133440H034",
-        "part_description": "FAIRING REAR",
+        "description": "FAIRING REAR",
         "available_quantity": 720,
         "condition_code": "New",
         "warehouse_name": "DASI Miami",
@@ -1145,7 +1145,7 @@
     {
         "id": "406a286b-a64a-4054-aaa1-457caa32a0d3",
         "part_number": "150180",
-        "part_description": "STATOR &HOUSING ASSY",
+        "description": "STATOR &HOUSING ASSY",
         "available_quantity": 215,
         "condition_code": "New Surplus",
         "warehouse_name": "Glendale, AZ",
@@ -1154,7 +1154,7 @@
     {
         "id": "ad8a6400-9c6a-4402-bc60-4b78bc650621",
         "part_number": "3A2355",
-        "part_description": "SUPPORT",
+        "description": "SUPPORT",
         "available_quantity": 963,
         "condition_code": "New Surplus",
         "warehouse_name": "Glendale, AZ",
@@ -1163,7 +1163,7 @@
     {
         "id": "3c4ff09a-06a8-4486-ae12-0b403f48fc60",
         "part_number": "245-691",
-        "part_description": "RING: RETAINING",
+        "description": "RING: RETAINING",
         "available_quantity": 144,
         "condition_code": "New",
         "warehouse_name": "Miami, FL",
@@ -1172,7 +1172,7 @@
     {
         "id": "a3528a70-446b-4511-bc47-4cc952c0d52a",
         "part_number": "EC22NTM02",
-        "part_description": "NUT",
+        "description": "NUT",
         "available_quantity": 515,
         "condition_code": "New",
         "warehouse_name": "Miami, FL",
@@ -1181,7 +1181,7 @@
     {
         "id": "ce41a9dc-5c36-4d02-b64e-4d7c266d2d64",
         "part_number": "GR3451",
-        "part_description": "SEAL",
+        "description": "SEAL",
         "available_quantity": 886,
         "condition_code": "New",
         "warehouse_name": "Miami, FL",
@@ -1190,7 +1190,7 @@
     {
         "id": "da02061f-008e-4e58-a402-99eab16da7d2",
         "part_number": "P01074-101",
-        "part_description": "LIFEVEST",
+        "description": "LIFEVEST",
         "available_quantity": 116,
         "condition_code": "New",
         "warehouse_name": "Miami, FL",
@@ -1199,7 +1199,7 @@
     {
         "id": "e7967e4f-e006-4152-af6f-a6e606594909",
         "part_number": "9GX852221-00",
-        "part_description": "CAP PROTECTING",
+        "description": "CAP PROTECTING",
         "available_quantity": 490,
         "condition_code": "New",
         "warehouse_name": "Miami, FL",
@@ -1208,7 +1208,7 @@
     {
         "id": "ce9fa32a-68dc-485c-8ae4-1a7cc6ef9b1f",
         "part_number": "14R02-08C",
-        "part_description": "SLEEVE",
+        "description": "SLEEVE",
         "available_quantity": 936,
         "condition_code": "New",
         "warehouse_name": "Orlando, FL",
@@ -1217,7 +1217,7 @@
     {
         "id": "eb485cd1-628e-4246-84e6-24a94445dc9d",
         "part_number": "2383S0401G1401BP",
-        "part_description": "STUD GROMMET",
+        "description": "STUD GROMMET",
         "available_quantity": 802,
         "condition_code": "New",
         "warehouse_name": "Orlando, FL",
@@ -1226,7 +1226,7 @@
     {
         "id": "91b06fa8-e9c6-46ef-acf1-38256620f044",
         "part_number": "7014664-902",
-        "part_description": "BATTERY ASY",
+        "description": "BATTERY ASY",
         "available_quantity": 205,
         "condition_code": "New",
         "warehouse_name": "Orlando, FL",
@@ -1235,7 +1235,7 @@
     {
         "id": "dd089ac5-e64a-4f05-b334-ddfda9cac736",
         "part_number": "43-1247",
-        "part_description": "BOLT",
+        "description": "BOLT",
         "available_quantity": 368,
         "condition_code": "New",
         "warehouse_name": "Orlando, FL",
@@ -1244,7 +1244,7 @@
     {
         "id": "6b20025b-f889-4186-aaf3-e9867240fe08",
         "part_number": "CSS122",
-        "part_description": "CONN",
+        "description": "CONN",
         "available_quantity": 193,
         "condition_code": "New",
         "warehouse_name": "Orlando, FL",
@@ -1253,7 +1253,7 @@
     {
         "id": "5a9e576d-3f3f-463d-9ae6-f7c6fb1b68f4",
         "part_number": "7593395-001",
-        "part_description": "FILTER ELEMENT. LUBE",
+        "description": "FILTER ELEMENT. LUBE",
         "available_quantity": 165,
         "condition_code": "New",
         "warehouse_name": "Orlando, FL",
@@ -1262,7 +1262,7 @@
     {
         "id": "654e397f-3bef-4309-95fa-fbd6053d279d",
         "part_number": "CDSP1904-503",
-        "part_description": "FITTING",
+        "description": "FITTING",
         "available_quantity": 246,
         "condition_code": "New",
         "warehouse_name": "Orlando, FL",
@@ -1271,7 +1271,7 @@
     {
         "id": "801b98d6-0a10-41aa-a89e-011273ac2104",
         "part_number": "A32010",
-        "part_description": "SPLIT RING",
+        "description": "SPLIT RING",
         "available_quantity": 551,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1280,7 +1280,7 @@
     {
         "id": "f7cfb9fa-2979-4418-a36a-033c4d4c0406",
         "part_number": "22296AG030006L",
-        "part_description": "SCREW",
+        "description": "SCREW",
         "available_quantity": 185,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1289,7 +1289,7 @@
     {
         "id": "a6cde61a-0100-4100-8bfd-04937c9ea209",
         "part_number": "NAS1149D0416H",
-        "part_description": "WASHER",
+        "description": "WASHER",
         "available_quantity": 889,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1298,7 +1298,7 @@
     {
         "id": "00690ef2-a18d-47dc-aa9f-0503b0a628f8",
         "part_number": "170-16705-901",
-        "part_description": "PLACARD..REF AOG# EE02",
+        "description": "PLACARD..REF AOG# EE02",
         "available_quantity": 615,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1307,7 +1307,7 @@
     {
         "id": "03028337-a93f-4df6-86fa-05c8effb5c38",
         "part_number": "170-01108-408",
-        "part_description": "NACA",
+        "description": "NACA",
         "available_quantity": 972,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1316,7 +1316,7 @@
     {
         "id": "f44cbcdd-7129-4136-9a35-06231dee4fbd",
         "part_number": "OP633-18",
-        "part_description": "CLAMP",
+        "description": "CLAMP",
         "available_quantity": 848,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1325,7 +1325,7 @@
     {
         "id": "f2d164d2-a320-4b68-b2b9-0c597fb89b80",
         "part_number": "20133",
-        "part_description": "WASHER, LOCK",
+        "description": "WASHER, LOCK",
         "available_quantity": 474,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1334,7 +1334,7 @@
     {
         "id": "fb0e5ca2-3f71-4a9c-a5fc-11fdde8d3b77",
         "part_number": "CSR90433-4F-6",
-        "part_description": "RIVET,SOLIDCOUNTERSUNK HEAD 100 DEG,HOLLOW END,TI",
+        "description": "RIVET,SOLIDCOUNTERSUNK HEAD 100 DEG,HOLLOW END,TI",
         "available_quantity": 270,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1343,7 +1343,7 @@
     {
         "id": "0bf7c1de-a97a-4bba-b614-12932050a404",
         "part_number": "170-32456-403",
-        "part_description": "SHROUD2 A",
+        "description": "SHROUD2 A",
         "available_quantity": 659,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1352,7 +1352,7 @@
     {
         "id": "255e3781-cee2-471f-9c89-1427a74ecc22",
         "part_number": "NAS73-5E006",
-        "part_description": "BUSHING, STEEL",
+        "description": "BUSHING, STEEL",
         "available_quantity": 482,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1361,7 +1361,7 @@
     {
         "id": "838e5e97-fd89-4aaf-9437-145b7efd307c",
         "part_number": "NAS1149D0416H",
-        "part_description": "WASHER",
+        "description": "WASHER",
         "available_quantity": 877,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1370,7 +1370,7 @@
     {
         "id": "69579289-14ff-44a1-bf02-17137a7791cb",
         "part_number": "120-39711-021",
-        "part_description": "TUBE ASSY",
+        "description": "TUBE ASSY",
         "available_quantity": 220,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1379,7 +1379,7 @@
     {
         "id": "26abada8-fefa-4c63-864f-17bd0f83ad79",
         "part_number": "M8791/1-122",
-        "part_description": "RETAINER RING",
+        "description": "RETAINER RING",
         "available_quantity": 377,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1388,7 +1388,7 @@
     {
         "id": "24e6f908-2649-4cd0-a734-1ce22eabfc1f",
         "part_number": "HST315-6-5",
-        "part_description": "PIN SCREW",
+        "description": "PIN SCREW",
         "available_quantity": 488,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1397,7 +1397,7 @@
     {
         "id": "24d3ad8e-e0f8-48c7-86e0-216b6d723089",
         "part_number": "M7885/2-4-02",
-        "part_description": "RIVET, BLIND, PROTRUDING HD",
+        "description": "RIVET, BLIND, PROTRUDING HD",
         "available_quantity": 143,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1406,7 +1406,7 @@
     {
         "id": "b1ca7df1-6cbd-46ba-a740-22acff5c2ec4",
         "part_number": "HL70-5",
-        "part_description": "COLLAR",
+        "description": "COLLAR",
         "available_quantity": 532,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1415,7 +1415,7 @@
     {
         "id": "4dd082be-0b16-4ee0-b17d-234f2287f3c2",
         "part_number": "20420-000-01",
-        "part_description": "TUBE ASSY",
+        "description": "TUBE ASSY",
         "available_quantity": 421,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1424,7 +1424,7 @@
     {
         "id": "bf1533e4-414d-462a-9ad9-266f8479f664",
         "part_number": "80-797",
-        "part_description": "WASHER",
+        "description": "WASHER",
         "available_quantity": 110,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1433,7 +1433,7 @@
     {
         "id": "d5918d83-171b-4512-b92c-282fdc0a01f2",
         "part_number": "NAS1149D0416H",
-        "part_description": "WASHER",
+        "description": "WASHER",
         "available_quantity": 225,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1442,7 +1442,7 @@
     {
         "id": "0c3b0007-a104-4aab-b3a7-2b1adced414d",
         "part_number": "MS51830A202L",
-        "part_description": "INSERT",
+        "description": "INSERT",
         "available_quantity": 554,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1451,7 +1451,7 @@
     {
         "id": "69d0c667-4beb-4c5d-847d-2cffee6b7147",
         "part_number": "320HS005M0911",
-        "part_description": "STRAIGHT ADAPTE",
+        "description": "STRAIGHT ADAPTE",
         "available_quantity": 322,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1460,7 +1460,7 @@
     {
         "id": "877581d6-908b-4e9c-8a51-2e79d3ae16e9",
         "part_number": "HST315-6-6",
-        "part_description": "HILITE PIN,CSK HEAD,130 DEG",
+        "description": "HILITE PIN,CSK HEAD,130 DEG",
         "available_quantity": 340,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1469,7 +1469,7 @@
     {
         "id": "8703bbc2-a43e-4d39-8938-30290a9e24a8",
         "part_number": "NAS1149D0416H",
-        "part_description": "WASHER",
+        "description": "WASHER",
         "available_quantity": 894,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1478,7 +1478,7 @@
     {
         "id": "d9724269-887c-4e57-b374-309388c542c7",
         "part_number": "NAS514P632-9",
-        "part_description": "SCREW",
+        "description": "SCREW",
         "available_quantity": 818,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1487,7 +1487,7 @@
     {
         "id": "5f4c9265-a20c-4008-b16a-3114878cf114",
         "part_number": "12 C6BU-SS",
-        "part_description": "FITTINGWATER/WASTE SYS,S STEEL",
+        "description": "FITTINGWATER/WASTE SYS,S STEEL",
         "available_quantity": 506,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1496,7 +1496,7 @@
     {
         "id": "0a05decd-8695-4629-af60-317ec6ae6850",
         "part_number": "PE21101-3-3T",
-        "part_description": "SCREW",
+        "description": "SCREW",
         "available_quantity": 409,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1505,7 +1505,7 @@
     {
         "id": "5a66e719-6eb9-4c52-aa42-324396581e33",
         "part_number": "MS27380-1",
-        "part_description": "LANYARD",
+        "description": "LANYARD",
         "available_quantity": 410,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1514,7 +1514,7 @@
     {
         "id": "4546756d-c1cd-4973-9013-337d0bde43ed",
         "part_number": "D10008D06",
-        "part_description": "JOINT",
+        "description": "JOINT",
         "available_quantity": 772,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1523,7 +1523,7 @@
     {
         "id": "15900961-a8ea-49e2-aede-338dcd00188c",
         "part_number": "190-38523-001",
-        "part_description": "RETAINER,SEAL",
+        "description": "RETAINER,SEAL",
         "available_quantity": 779,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1532,7 +1532,7 @@
     {
         "id": "53dfeccb-77ce-4d8e-bda1-34b30e304176",
         "part_number": "MS35275-230",
-        "part_description": "SCREW",
+        "description": "SCREW",
         "available_quantity": 922,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1541,7 +1541,7 @@
     {
         "id": "fc9c677d-ca40-4d18-bce7-36ade8409666",
         "part_number": "HST410BJ-8-4",
-        "part_description": "PIN,THREADED",
+        "description": "PIN,THREADED",
         "available_quantity": 734,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1550,7 +1550,7 @@
     {
         "id": "99b049d9-e823-49e4-b90f-371739d48400",
         "part_number": "120-13016-001",
-        "part_description": "BUSHING",
+        "description": "BUSHING",
         "available_quantity": 538,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1559,7 +1559,7 @@
     {
         "id": "5b3ce970-66bc-48b1-872a-388df528afc9",
         "part_number": "CR3224-4-2",
-        "part_description": "RIVET",
+        "description": "RIVET",
         "available_quantity": 354,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1568,7 +1568,7 @@
     {
         "id": "370ce61d-1856-4bc3-9f86-3ba6fc999d2b",
         "part_number": "M45932/1-9CL",
-        "part_description": "INSERT,THREADEDSELF LOCKING,CRES",
+        "description": "INSERT,THREADEDSELF LOCKING,CRES",
         "available_quantity": 725,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1577,7 +1577,7 @@
     {
         "id": "f57e395b-9f1a-47c8-844b-3e417f45c8b5",
         "part_number": "145-24497-403",
-        "part_description": "TUBE ASSY RETURN SYS 1",
+        "description": "TUBE ASSY RETURN SYS 1",
         "available_quantity": 682,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1586,7 +1586,7 @@
     {
         "id": "827d1902-8d2f-4695-a28f-3f998be1e15c",
         "part_number": "MS24524-27",
-        "part_description": "SWITCH",
+        "description": "SWITCH",
         "available_quantity": 456,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1595,7 +1595,7 @@
     {
         "id": "abdf61d5-1537-4f42-aa72-40b3e3368e66",
         "part_number": "CR3523-4-03",
-        "part_description": "RIVET,BLINDUNIVERSAL HEAD,MONEL",
+        "description": "RIVET,BLINDUNIVERSAL HEAD,MONEL",
         "available_quantity": 752,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1604,7 +1604,7 @@
     {
         "id": "a110b5a4-b589-4520-bc74-43422ef29ca9",
         "part_number": "NAS1149D0416H",
-        "part_description": "WASHER",
+        "description": "WASHER",
         "available_quantity": 571,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",
@@ -1613,7 +1613,7 @@
     {
         "id": "72c1e737-c058-485d-90fd-46c6c4dcc09b",
         "part_number": "OP633-9A",
-        "part_description": "CLAMP",
+        "description": "CLAMP",
         "available_quantity": 419,
         "condition_code": "New Surplus",
         "warehouse_name": "Orlando, FL",

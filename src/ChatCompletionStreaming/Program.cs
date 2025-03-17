@@ -48,10 +48,10 @@ var generateEmailTextFunc = kernel.Plugins.GetFunction(nameof(PartCatalogPlugin)
 
 var chatService = kernel.GetRequiredService<IChatCompletionService>();
 
-Console.WriteLine("======== Ollama - Chat Completion Streaming ========");
+Console.WriteLine("======== Part Catalog Assistant ========");
 
 // Create a history store the conversation
-var chatHistory = new ChatHistory(@$"""
+var chatHistory = new ChatHistory(@$"
 Instructions: 
 - You are a friendly agent dedicated to providing part number catalog information for the aircraft industry, supporting the sales team by making queries to get part information.
 - Focus solely on these tasks and refrain from responding to any unrelated inquiries.
@@ -60,7 +60,12 @@ Instructions:
 - The abbreviation PN stands for Part Number.
 - You can create email text, if user do this requests.
 
-Choices: {PartCatalogPlugin.RetrivePartNumberRecordFuncName}, {PartCatalogPlugin.CreateEmailTextFuncName}
+Choices: 
+- {PartCatalogPlugin.RetrivePartNumberRecordFuncName}
+- {PartCatalogPlugin.CreateEmailTextFuncName}
+- {PartCatalogPlugin.CreateQuoteFuncName}
+
+Examples:
 
 User Input: Check part number ABC123
 Intent: {PartCatalogPlugin.RetrivePartNumberRecordFuncName}
@@ -73,7 +78,18 @@ Assistant Response: Part Number ABC123 'DESCRIPTION' is in stock and here are th
 User Input: Create email text for part number ABC123
 Intent: {PartCatalogPlugin.CreateEmailTextFuncName}
 
-""");
+User Input: Create a quote for part number {{$part_number}} for customer {{$customer_name}} and quantity {{$quantity}}
+Intent: {PartCatalogPlugin.CreateQuoteFuncName}
+Assistant Response: Customer {{$customer_name}} Quote for Part Number: {{$part_number}}
+----------------------------------------
+Description: {{{PartCatalogPlugin.CreateQuoteFuncName} $description}}
+Quantity: {{{PartCatalogPlugin.CreateQuoteFuncName} $quantity}}
+Total Price: {{{PartCatalogPlugin.CreateQuoteFuncName} $unit_price}}
+Condition Code: {{{PartCatalogPlugin.CreateQuoteFuncName} $condition_code}}
+Warehouse: {{{PartCatalogPlugin.CreateQuoteFuncName} $warehouse_name}}
+----------------------------------------
+Thank you for your inquiry. If you have any further questions or need additional assistance, please let us know.
+");
 
 // Add System Message 
 chatService.GetStreamingChatMessageContentsAsync(
