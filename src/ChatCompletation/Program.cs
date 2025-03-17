@@ -60,7 +60,7 @@ Console.WriteLine("\n======== End of Chat ========");
 static void OutputMessage(ChatHistory chats, bool waitEnter = true)
 {
     var chat = chats.Last();
-    Console.WriteLine($"{chat.Role}: {chat}");
+    Console.WriteLine($"{chat.Role} >>> {chat}");
 
     if (waitEnter)
     {
@@ -68,13 +68,3 @@ static void OutputMessage(ChatHistory chats, bool waitEnter = true)
         Console.ReadLine();
     }
 }
-
-
-//var response = chatService.GetStreamingChatMessageContentsAsync(
-//    chatHistory: chatHistory,
-//    kernel: kernel);
-
-//await foreach (var chat in response)
-//{
-//    Console.WriteLine(chat);
-//}
