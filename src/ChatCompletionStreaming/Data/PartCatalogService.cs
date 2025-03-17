@@ -14,13 +14,14 @@ public class PartCatalogService : IPartCatalogService
 
     private List<PartCatalog> LoadPartCatalog()
     {
-        string json = File.ReadAllText("Data/fake_part_catalog_ds.json");
+        string json = File.ReadAllText("Data/part-catalog.json");
         Data = JsonSerializer.Deserialize<List<PartCatalog>>(json) ?? [];
         return Data;
     }
 
-    public PartCatalog? GetPartCatalog(string partNumber)
+    public PartCatalog? Get(string partNumber)
     {
-        return Data.FirstOrDefault(x => x.PartNumber.Equals(partNumber, StringComparison.OrdinalIgnoreCase));
+        return Data
+            .FirstOrDefault(x => x.PartNumber.Equals(partNumber, StringComparison.OrdinalIgnoreCase));
     }
 }

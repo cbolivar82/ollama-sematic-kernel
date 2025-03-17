@@ -6,5 +6,5 @@ public interface IPartCatalogService
 {
     List<PartCatalog> Data { get; set; }
 
-    PartCatalog? GetPartCatalog(string partNumber);
+    PartCatalog? Get(string partNumber);
 }

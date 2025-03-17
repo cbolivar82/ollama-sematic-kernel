@@ -20,6 +20,7 @@ using Serilog;
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Debug()
     .WriteTo.Console()
+    .WriteTo.Debug()
     .CreateLogger();
 
 //const string ModelName = "deepseek-r1";
@@ -34,11 +35,16 @@ var kernelBuilder = Kernel.CreateBuilder()
                endpoint: ollamaUri,
                modelId: ModelName);
 
+kernelBuilder.Services.AddSingleton<IFunctionInvocationFilter, LoggingFilter>();
 kernelBuilder.Services.AddSingleton<IPartCatalogService, PartCatalogService>();
 
 kernelBuilder.Plugins.AddFromType<PartCatalogPlugin>(nameof(PartCatalogPlugin));
 
 var kernel = kernelBuilder.Build();
+
+//Get pluging functions 
+var retrivePartNumberRecordFunc = kernel.Plugins.GetFunction(nameof(PartCatalogPlugin), PartCatalogPlugin.RetrivePartNumberRecordFuncName);
+var generateEmailTextFunc = kernel.Plugins.GetFunction(nameof(PartCatalogPlugin), PartCatalogPlugin.CreateEmailTextFuncName);
 
 var chatService = kernel.GetRequiredService<IChatCompletionService>();
 
@@ -47,51 +53,42 @@ Console.WriteLine("======== Ollama - Chat Completion Streaming ========");
 // Create a history store the conversation
 var chatHistory = new ChatHistory(@$"""
 Instructions: 
-- You are a friendly agent dedicated to the part catalog for the aircraft industry, supporting the sales team by making queries to get part information.
+- You are a friendly agent dedicated to providing part number catalog information for the aircraft industry, supporting the sales team by making queries to get part information.
 - Focus solely on these tasks and refrain from responding to any unrelated inquiries.
 - Do not answer any questions, queries, or requests unrelated to part number information.
 - Assist the user with querying part numbers.
-- Support the user in generating text for a quote email to send to customers, but only if the user asks for it.
 - The abbreviation PN stands for Part Number.
-- If you receive a part number, display the part details.
+- You can create email text, if user do this requests.
 
-Choices: {PartCatalogPlugin.RetrivePartNumberRecordFuncName}, {PartCatalogPlugin.GenerateEmailTextFuncName}
-
-User Input: Can you check the inventory of the part number ABC123?
-Intent: {PartCatalogPlugin.RetrivePartNumberRecordFuncName}
-Assistant Response: Part ABC123 is in stock and here are the details:
-    Quantity: 10
-    UnitOfMeasure: EA
-    Price: 100.00
-    Warehouse: A
-    WarehouseCountry: USA
-    IsHazmat: False
+Choices: {PartCatalogPlugin.RetrivePartNumberRecordFuncName}, {PartCatalogPlugin.CreateEmailTextFuncName}
 
 User Input: Check part number ABC123
 Intent: {PartCatalogPlugin.RetrivePartNumberRecordFuncName}
+Assistant Response: Part Number ABC123 'DESCRIPTION' is in stock and here are the details:
+    Available Quantity: 10
+    Price: $1,235.34
+    Condition Code: XYZ
+    Warehouse: XYZ
 
-User Input: Write email text
-Intent: {PartCatalogPlugin.GenerateEmailTextFuncName}. Use the latest part number details to write a email for a customer quote.
-        
-User Input: Can you generate email text for part number ABC123?
-Intent: {PartCatalogPlugin.GenerateEmailTextFuncName}
+User Input: Create email text for part number ABC123
+Intent: {PartCatalogPlugin.CreateEmailTextFuncName}
+
 """);
 
-var response = chatService.GetStreamingChatMessageContentsAsync(
+// Add System Message 
+chatService.GetStreamingChatMessageContentsAsync(
     chatHistory: chatHistory,
     kernel: kernel);
 
-// Enable planning
+// Configure Prompt
 OllamaPromptExecutionSettings ollamaExecutionSettings = new()
 {
-    FunctionChoiceBehavior = FunctionChoiceBehavior.Auto(),
+    FunctionChoiceBehavior = FunctionChoiceBehavior.Auto(), // FunctionChoiceBehavior.Auto(functions: [retrivePartNumberRecordFunc, generateEmailTextFunc]),
     Temperature = 0.9f
 };
 
 // Initiate a back-and-forth chat
 string? userInput;
-
-//CheckPn("SR09270005-7001").GetAwaiter().GetResult();
 
 do
 {
