@@ -6,10 +6,12 @@ This project demonstrates how to integrate a locally hosted Large Language Model
 
 ### Ollama
 - [Ollama GitHub Repository](https://github.com/ollama/ollama?tab=readme-ov-file#ollama)
-   > Run large language models locally
+    
+    > Run large language models locally
 
 ### Microsoft Semantic Kernel
 - [Official Documentation](https://learn.microsoft.com/en-us/semantic-kernel/overview/)
+    
     > SDK for building AI-powered applications
 
 ## Learning Resources
