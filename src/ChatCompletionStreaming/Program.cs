@@ -36,7 +36,7 @@ var kernelBuilder = Kernel.CreateBuilder()
 // TODO: 2.2 Dependency Injection
 kernelBuilder.Services.AddSingleton<IPartCatalogService, PartCatalogService>();
 
-// Reference: https://learn.microsoft.com/en-us/training/modules/combine-prompts-functions/4-filter-invoked-functions
+// Reference: https://learn.microsoft.com/en-us/semantic-kernel/concepts/enterprise-readiness/filters?pivots=programming-language-csharp
 kernelBuilder.Services.AddSingleton<IFunctionInvocationFilter, LoggingFilter>();
 
 kernelBuilder.Plugins.AddFromType<PartCatalogPlugin>(nameof(PartCatalogPlugin));
@@ -97,7 +97,7 @@ chatService.GetStreamingChatMessageContentsAsync(
     chatHistory: chatHistory,
     kernel: kernel);
 
-// Configure Prompt
+//TODO: 2.5 Configure the prompt
 var ollamaExecutionSettings = new OllamaPromptExecutionSettings()
 {
     FunctionChoiceBehavior = FunctionChoiceBehavior.Auto(),
@@ -114,11 +114,11 @@ do
     userInput = Console.ReadLine();
     if (userInput is null || userInput.Equals("bye", StringComparison.InvariantCultureIgnoreCase)) break;
 
-    // Add user input
+    // TODO: 2.6 Add user input
     chatHistory.AddUserMessage(userInput!);
     Console.WriteLine(Thinking);
 
-    // Get the response from the AI
+    // TODO: 2.7 Get the response from the AI
     var result = await chatService.GetChatMessageContentAsync(
         chatHistory,
         executionSettings: ollamaExecutionSettings,
@@ -129,6 +129,7 @@ do
 
     // Add the message from the agent to the chat history
     chatHistory.AddMessage(result.Role, result.Content ?? string.Empty);
+
 } while (userInput is not null);
 
 Console.WriteLine("\n======== End of Chat ========");
