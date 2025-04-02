@@ -1,10 +1,13 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using ChatWebApp.Services.Ingestion.Entities;
+
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.AI;
 using Microsoft.SemanticKernel.Text;
+
+using UglyToad.PdfPig;
+using UglyToad.PdfPig.Content;
 using UglyToad.PdfPig.DocumentLayoutAnalysis.PageSegmenter;
 using UglyToad.PdfPig.DocumentLayoutAnalysis.WordExtractor;
-using UglyToad.PdfPig;
-using Microsoft.Extensions.AI;
-using UglyToad.PdfPig.Content;
 
 namespace ChatWebApp.Services.Ingestion;
 
@@ -17,12 +20,12 @@ public class PDFDirectorySource(string sourceDirectory) : IIngestionSource
     public async Task<IEnumerable<IngestedDocument>> GetNewOrModifiedDocumentsAsync(IQueryable<IngestedDocument> existingDocuments)
     {
         var results = new List<IngestedDocument>();
-        var sourceFiles = Directory.GetFiles(sourceDirectory, "*.pdf");
+        string[] sourceFiles = Directory.GetFiles(sourceDirectory, "*.pdf");
 
-        foreach (var sourceFile in sourceFiles)
+        foreach (string sourceFile in sourceFiles)
         {
-            var sourceFileId = SourceFileId(sourceFile);
-            var sourceFileVersion = File.GetLastWriteTimeUtc(sourceFile).ToString("o");
+            string sourceFileId = SourceFileId(sourceFile);
+            string sourceFileVersion = File.GetLastWriteTimeUtc(sourceFile).ToString("o");
 
             var existingDocument = await existingDocuments.Where(d => d.SourceId == SourceId && d.Id == sourceFileId).FirstOrDefaultAsync();
             if (existingDocument is null)
@@ -41,7 +44,7 @@ public class PDFDirectorySource(string sourceDirectory) : IIngestionSource
 
     public async Task<IEnumerable<IngestedDocument>> GetDeletedDocumentsAsync(IQueryable<IngestedDocument> existingDocuments)
     {
-        var sourceFiles = Directory.GetFiles(sourceDirectory, "*.pdf");
+        string[] sourceFiles = Directory.GetFiles(sourceDirectory, "*.pdf");
         var sourceFileIds = sourceFiles.Select(SourceFileId).ToList();
         return await existingDocuments
             .Where(d => !sourceFileIds.Contains(d.Id))
@@ -52,7 +55,7 @@ public class PDFDirectorySource(string sourceDirectory) : IIngestionSource
     {
         using var pdf = PdfDocument.Open(Path.Combine(sourceDirectory, documentId));
         var paragraphs = pdf.GetPages().SelectMany(GetPageParagraphs).ToList();
-        
+
         var embeddings = await embeddingGenerator.GenerateAsync(paragraphs.Select(c => c.Text));
 
         return paragraphs.Zip(embeddings).Select((pair, index) => new SemanticSearchRecord
@@ -70,7 +73,7 @@ public class PDFDirectorySource(string sourceDirectory) : IIngestionSource
         var letters = pdfPage.Letters;
         var words = NearestNeighbourWordExtractor.Instance.GetWords(letters);
         var textBlocks = DocstrumBoundingBoxes.Instance.GetBlocks(words);
-        var pageText = string.Join(Environment.NewLine + Environment.NewLine,
+        string pageText = string.Join(Environment.NewLine + Environment.NewLine,
             textBlocks.Select(t => t.Text.ReplaceLineEndings(" ")));
 
 #pragma warning disable SKEXP0050 // Type is for evaluation purposes only

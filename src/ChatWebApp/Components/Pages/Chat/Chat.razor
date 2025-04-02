@@ -11,9 +11,8 @@
 
 <ChatMessageList Messages="@messages" InProgressMessage="@currentResponseMessage">
     <NoMessagesContent>
-        <div>To get started, try asking about these example documents. You can replace these with your own data and replace this message.</div>
-        <ChatCitation File="Example_Emergency_Survival_Kit.pdf"/>
-        <ChatCitation File="Example_GPS_Watch.pdf"/>
+        <div>What would you like to cook today?</div>
+        <ChatCitation File="FoodDay_Cookbook.pdf" />
     </NoMessagesContent>
 </ChatMessageList>
 
@@ -25,21 +24,22 @@
 
 @code {
     private const string SystemPrompt = @"
-        You are an assistant who answers questions about information you retrieve.
-        Do not answer questions about anything else.
-        Use only simple markdown to format your responses.
+            You are an assistant designed to answer questions based on retrieved information.
+            Focus exclusively on these tasks and avoid responding to unrelated inquiries. Do not answer questions about anything else.
+            Use simple markdown for formatting your responses.
 
-        Use the search tool to find relevant information. When you do this, end your
-        reply with citations in the special XML format:
+            Utilize the search tool to find relevant information. When you do this, end your
+            reply with citations in the special XML format:
 
-        <citation filename='string' page_number='number'>exact quote here</citation>
+            <citation filename='string' page_number='number'>exact quote here</citation>
 
-        Always include the citation in your response if there are results.
+            Always include the citation in your response if there are any results.
 
-        The quote must be max 5 words, taken word-for-word from the search result, and is the basis for why the citation is relevant.
-        Don't refer to the presence of citations; just emit these tags right at the end, with no surrounding text.
-        ";
+            The quote must be a maximum of 5 words, taken verbatim from the search result, and should justify the citation's relevance.
+            Do not mention the presence of citations; simply append these tags at the end, without any surrounding text.
 
+            If there is no answer for a question, reply with 'I do not have that information.'";
+            
     private readonly ChatOptions chatOptions = new();
     private readonly List<ChatMessage> messages = new();
     private CancellationTokenSource? currentResponseCancellation;
@@ -93,6 +93,7 @@
         await chatInput!.FocusAsync();
     }
 
+    // TODO: 3.1 Function
     [Description("Searches for information using a phrase or keyword")]
     private async Task<IEnumerable<string>> SearchAsync(
         [Description("The phrase to search for.")] string searchPhrase,

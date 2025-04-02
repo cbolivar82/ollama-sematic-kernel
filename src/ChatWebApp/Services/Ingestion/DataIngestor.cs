@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using ChatWebApp.Services.Ingestion.Entities;
+
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.AI;
 using Microsoft.Extensions.VectorData;
 
@@ -26,6 +28,7 @@ public class DataIngestor(
             .Where(d => d.SourceId == source.SourceId)
             .Include(d => d.Records);
 
+        // Remove documents that have been deleted from the source
         var deletedFiles = await source.GetDeletedDocumentsAsync(documentsForSource);
         foreach (var deletedFile in deletedFiles)
         {
@@ -35,6 +38,7 @@ public class DataIngestor(
         }
         await ingestionCacheDb.SaveChangesAsync();
 
+        // Add or update documents that have been modified
         var modifiedDocs = await source.GetNewOrModifiedDocumentsAsync(documentsForSource);
         foreach (var modifiedDoc in modifiedDocs)
         {
@@ -44,9 +48,9 @@ public class DataIngestor(
             {
                 await vectorCollection.DeleteBatchAsync(modifiedDoc.Records.Select(r => r.Id));
             }
-            
+
             var newRecords = await source.CreateRecordsForDocumentAsync(embeddingGenerator, modifiedDoc.Id);
-            await foreach (var id in vectorCollection.UpsertBatchAsync(newRecords)) { }
+            await foreach (string id in vectorCollection.UpsertBatchAsync(newRecords)) { }
 
             modifiedDoc.Records.Clear();
             modifiedDoc.Records.AddRange(newRecords.Select(r => new IngestedRecord { Id = r.Key, DocumentId = modifiedDoc.Id }));

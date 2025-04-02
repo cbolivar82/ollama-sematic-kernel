@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.AI;
+﻿using ChatWebApp.Services.Ingestion.Entities;
+
+using Microsoft.Extensions.AI;
 
 namespace ChatWebApp.Services.Ingestion;
 

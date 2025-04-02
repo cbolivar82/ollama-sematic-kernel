@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using ChatWebApp.Services.Ingestion.Entities;
+
+using Microsoft.EntityFrameworkCore;
 
 namespace ChatWebApp.Services.Ingestion;
 
@@ -26,19 +28,4 @@ public class IngestionCacheDbContext : DbContext
         base.OnModelCreating(modelBuilder);
         modelBuilder.Entity<IngestedDocument>().HasMany(d => d.Records).WithOne().HasForeignKey(r => r.DocumentId).OnDelete(DeleteBehavior.Cascade);
     }
-}
-
-public class IngestedDocument
-{
-    // TODO: Make Id+SourceId a composite key
-    public required string Id { get; set; }
-    public required string SourceId { get; set; }
-    public required string Version { get; set; }
-    public List<IngestedRecord> Records { get; set; } = [];
-}
-
-public class IngestedRecord
-{
-    public required string Id { get; set; }
-    public required string DocumentId { get; set; }
 }
