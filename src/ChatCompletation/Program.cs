@@ -31,7 +31,8 @@ var ollamaClient = new OllamaApiClient(
 // Get ChatCompletion service
 var chatService = ollamaClient.AsChatCompletionService();
 
-// Initialize chat history
+// **************************************
+// TODO: 1.1 Initialize chat history
 var chatHistory = new ChatHistory("You are a helpful assistant that knows about AI.");
 
 // First user message

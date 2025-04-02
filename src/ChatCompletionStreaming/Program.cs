@@ -3,6 +3,7 @@
 #pragma warning disable SKEXP0001 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
 using ChatCompletionStreaming;
 using ChatCompletionStreaming.Data;
+using ChatCompletionStreaming.Filters;
 
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.SemanticKernel;
@@ -11,12 +12,6 @@ using Microsoft.SemanticKernel.Connectors.Ollama;
 
 using Serilog;
 
-
-////setup our DI
-//var serviceProvider = new ServiceCollection()
-//    .AddSingleton<IPartCatalogService, PartCatalogService>()
-//    .BuildServiceProvider();
-
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Debug()
     .WriteTo.Console()
@@ -24,10 +19,12 @@ Log.Logger = new LoggerConfiguration()
     .CreateLogger();
 
 //const string ModelName = "deepseek-r1";
-const string ModelName = "llama3.2";
 //const string ModelName = "mistral";
+const string ModelName = "llama3.2";
 const string Thinking = ">>> Thinking...";
 
+// **************************************
+// TODO: 2.1 Create the Kernel
 var ollamaUri = new Uri("http://localhost:11434");
 
 var kernelBuilder = Kernel.CreateBuilder()
@@ -35,22 +32,26 @@ var kernelBuilder = Kernel.CreateBuilder()
                endpoint: ollamaUri,
                modelId: ModelName);
 
-kernelBuilder.Services.AddSingleton<IFunctionInvocationFilter, LoggingFilter>();
+// **************************************
+// TODO: 2.2 Dependency Injection
 kernelBuilder.Services.AddSingleton<IPartCatalogService, PartCatalogService>();
+
+// Reference: https://learn.microsoft.com/en-us/training/modules/combine-prompts-functions/4-filter-invoked-functions
+kernelBuilder.Services.AddSingleton<IFunctionInvocationFilter, LoggingFilter>();
 
 kernelBuilder.Plugins.AddFromType<PartCatalogPlugin>(nameof(PartCatalogPlugin));
 
 var kernel = kernelBuilder.Build();
 
-//Get pluging functions 
-var retrivePartNumberRecordFunc = kernel.Plugins.GetFunction(nameof(PartCatalogPlugin), PartCatalogPlugin.RetrivePartNumberRecordFuncName);
-var generateEmailTextFunc = kernel.Plugins.GetFunction(nameof(PartCatalogPlugin), PartCatalogPlugin.CreateEmailTextFuncName);
 
+// ********************************************************
+// Chat configuration
 var chatService = kernel.GetRequiredService<IChatCompletionService>();
 
 Console.WriteLine("======== Part Catalog Assistant ========");
 
-// Create a history store the conversation
+// **************************************
+// TODO: 2.4 Create System Message (Chat context)
 var chatHistory = new ChatHistory(@$"
 Instructions: 
 - You are a friendly agent dedicated to providing part number catalog information for the aircraft industry, supporting the sales team by making queries to get part information.
@@ -97,9 +98,9 @@ chatService.GetStreamingChatMessageContentsAsync(
     kernel: kernel);
 
 // Configure Prompt
-OllamaPromptExecutionSettings ollamaExecutionSettings = new()
+var ollamaExecutionSettings = new OllamaPromptExecutionSettings()
 {
-    FunctionChoiceBehavior = FunctionChoiceBehavior.Auto(), // FunctionChoiceBehavior.Auto(functions: [retrivePartNumberRecordFunc, generateEmailTextFunc]),
+    FunctionChoiceBehavior = FunctionChoiceBehavior.Auto(),
     Temperature = 0.9f
 };
 

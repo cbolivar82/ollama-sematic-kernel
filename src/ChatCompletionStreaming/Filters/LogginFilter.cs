@@ -2,7 +2,9 @@
 
 using Microsoft.SemanticKernel;
 
-namespace ChatCompletionStreaming;
+namespace ChatCompletionStreaming.Filters;
+// **************************************
+// TODO: 2.5 Logging
 public sealed class LoggingFilter() : IFunctionInvocationFilter
 {
     public async Task OnFunctionInvocationAsync(FunctionInvocationContext context, Func<FunctionInvocationContext, Task> next)
