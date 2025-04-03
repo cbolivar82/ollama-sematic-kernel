@@ -3,9 +3,6 @@
 #pragma warning disable SKEXP0001 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
 
 using Microsoft.SemanticKernel;
-using Microsoft.SemanticKernel.ChatCompletion;
-
-using OllamaSharp;
 
 using Serilog;
 
@@ -16,52 +13,32 @@ Log.Logger = new LoggerConfiguration()
 
 const string ModelName = "llama3.2";
 const string ContinueMessage = "Press Enter to continue...";
-const string Thinking = ">>> Thinking...";
+const string Thinking = ">>> Thinking... \n\n";
 
 var ollamaUri = new Uri("http://localhost:11434");
-ChatMessageContent? reply = null;
+
+var kernelBuilder = Kernel.CreateBuilder()
+           .AddOllamaChatCompletion(
+               endpoint: ollamaUri,
+               modelId: ModelName);
+var kernel = kernelBuilder.Build();
 
 Console.WriteLine("======== Chat Completion ========");
 
-// Create Ollama API client
-var ollamaClient = new OllamaApiClient(
-    uri: ollamaUri,
-    defaultModel: ModelName);
+// TODO: 1.1 Invoke a Prompt
+string promptOne = "What is the capital city of the USA?";
+OutputMessage("User", promptOne);
 
-// Get ChatCompletion service
-var chatService = ollamaClient.AsChatCompletionService();
-
-// **************************************
-// TODO: 1.1 Initialize chat history
-var chatHistory = new ChatHistory("You are a helpful assistant that knows about Generative AI.");
-
-// First user message
-chatHistory.AddUserMessage("Can you provide a list of 5 recommended books about Generative AI?");
-OutputMessage(chatHistory);
-
-// First assistant message 
 Console.WriteLine(Thinking);
-reply = await chatService.GetChatMessageContentAsync(chatHistory);
-chatHistory.Add(reply);
-OutputMessage(chatHistory, false);
-
-// Second user message
-chatHistory.AddUserMessage("What are Generative AI capabilities?");
-OutputMessage(chatHistory);
-
-// Second assistant message
-Console.WriteLine(Thinking);
-reply = await chatService.GetChatMessageContentAsync(chatHistory);
-chatHistory.Add(reply);
-OutputMessage(chatHistory, false);
-
+var result = await kernel.InvokePromptAsync(promptOne);
+OutputMessage("Assistant", result.ToString());
 
 Console.WriteLine("\n======== End of Chat ========");
 
-static void OutputMessage(ChatHistory chats, bool waitEnter = true)
+static void OutputMessage(string role, string text, bool waitEnter = true)
 {
-    var chat = chats.Last();
-    Console.WriteLine($"{chat.Role} >>> {chat}");
+
+    Console.WriteLine($"{role} >>> {text}");
 
     if (waitEnter)
     {
