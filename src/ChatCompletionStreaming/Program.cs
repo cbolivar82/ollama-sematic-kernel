@@ -18,8 +18,6 @@ Log.Logger = new LoggerConfiguration()
     .WriteTo.Debug()
     .CreateLogger();
 
-//const string ModelName = "deepseek-r1";
-//const string ModelName = "mistral";
 const string ModelName = "llama3.2";
 const string Thinking = ">>> Thinking...";
 
