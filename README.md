@@ -41,3 +41,8 @@ This project demonstrates how to integrate a locally hosted Large Language Model
 
 - [Mistral](https://mistral.ai)
   > API and Platform for accessing to Mistral
+
+## Visual Studio Templates:
+
+- [NET AI Template](https://devblogs.microsoft.com/dotnet/announcing-dotnet-ai-template-preview1/?utm_content=326721173&utm_medium=social&utm_source=linkedin&hss_channel=lcp-18055275)
+  > Create AI-powered applications with .NET
