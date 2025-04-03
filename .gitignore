@@ -398,3 +398,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/src/ChatWebApp/ingestioncache.db
+/src/ChatWebApp/ingestioncache.db-shm
+/src/ChatWebApp/ingestioncache.db-wal
