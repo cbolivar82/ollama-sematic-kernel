@@ -3,8 +3,7 @@
 using ChatCompletionStreaming.Core.Entities;
 
 namespace ChatCompletionStreaming.Data;
-// **************************************
-// TODO: 2.4 Data Service 
+
 public class PartCatalogService : IPartCatalogService
 {
     public PartCatalogService()

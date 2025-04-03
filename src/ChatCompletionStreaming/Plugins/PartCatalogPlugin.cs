@@ -20,7 +20,6 @@ public class PartCatalogPlugin
 
     [KernelFunction(RetrivePartNumberRecordFuncName)]
     [Description(@"Check a part number is in stock and retrieve Part Number Details")]
-    //[return: Description("Part Number is in stock with the Details.")]
     public string RetreivePartNumberInfo(
         [Description("The part number to retrieve.")] string partNumber)
     {

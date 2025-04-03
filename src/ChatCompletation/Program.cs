@@ -21,7 +21,7 @@ const string Thinking = ">>> Thinking...";
 var ollamaUri = new Uri("http://localhost:11434");
 ChatMessageContent? reply = null;
 
-Console.WriteLine("======== Ollama - Chat Completion ========");
+Console.WriteLine("======== Chat Completion ========");
 
 // Create Ollama API client
 var ollamaClient = new OllamaApiClient(
@@ -33,20 +33,20 @@ var chatService = ollamaClient.AsChatCompletionService();
 
 // **************************************
 // TODO: 1.1 Initialize chat history
-var chatHistory = new ChatHistory("You are a helpful assistant that knows about AI.");
+var chatHistory = new ChatHistory("You are a helpful assistant that knows about Generative AI.");
 
 // First user message
-chatHistory.AddUserMessage("I'm looking for a book about AI");
+chatHistory.AddUserMessage("Can you provide a list of 5 recommended books about Generative AI?");
 OutputMessage(chatHistory);
 
 // First assistant message 
 Console.WriteLine(Thinking);
 reply = await chatService.GetChatMessageContentAsync(chatHistory);
 chatHistory.Add(reply);
-OutputMessage(chatHistory);
+OutputMessage(chatHistory, false);
 
 // Second user message
-chatHistory.AddUserMessage("I want to learn more about neural networks");
+chatHistory.AddUserMessage("What are Generative AI capabilities?");
 OutputMessage(chatHistory);
 
 // Second assistant message
