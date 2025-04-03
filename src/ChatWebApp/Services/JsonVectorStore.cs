@@ -1,8 +1,10 @@
-﻿using Microsoft.Extensions.VectorData;
+﻿using System.Diagnostics;
 using System.Numerics.Tensors;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Text.Json;
+
+using Microsoft.Extensions.VectorData;
 
 namespace ChatWebApp.Services;
 
@@ -28,15 +30,21 @@ public class JsonVectorStore(string basePath) : IVectorStore
     {
         private static readonly Func<TRecord, TKey> _getKey = CreateKeyReader();
         private static readonly Func<TRecord, ReadOnlyMemory<float>> _getVector = CreateVectorReader();
-
         private readonly string _name;
         private readonly string _filePath;
         private Dictionary<TKey, TRecord>? _records;
 
-        public JsonVectorStoreRecordCollection(string name, string filePath, VectorStoreRecordDefinition? vectorStoreRecordDefinition)
+        public JsonVectorStoreRecordCollection(
+            string name,
+            string filePath,
+#pragma warning disable IDE0060 // Remove unused parameter
+            VectorStoreRecordDefinition? vectorStoreRecordDefinition)
+#pragma warning restore IDE0060 // Remove unused parameter
         {
             _name = name;
             _filePath = filePath;
+
+            Debug.WriteLine($">> Loading collection '{name}' from file path: {filePath}");
 
             if (File.Exists(filePath))
             {
@@ -171,7 +179,7 @@ public class JsonVectorStore(string basePath) : IVectorStore
 
         private async Task WriteToDiskAsync(CancellationToken cancellationToken = default)
         {
-            var json = JsonSerializer.Serialize(_records);
+            string json = JsonSerializer.Serialize(_records);
             Directory.CreateDirectory(Path.GetDirectoryName(_filePath)!);
             await File.WriteAllTextAsync(_filePath, json, cancellationToken);
         }
